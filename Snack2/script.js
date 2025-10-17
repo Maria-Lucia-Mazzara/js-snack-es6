@@ -16,3 +16,9 @@ const squadre = [
     { nome: 'Roma', punti: 0, falli: 0 }
 ];
 
+// dare a ogni squadra dei valori casuali di punti e falli.
+for (let i = 0; i < squadre.length; i++) {
+    squadre[i].puntiFatti = Math.floor(Math.random() * 100);
+    squadre[i].falliSubiti = Math.floor(Math.random() * 300);
+}
+
