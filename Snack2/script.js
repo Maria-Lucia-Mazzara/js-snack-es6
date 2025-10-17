@@ -22,3 +22,19 @@ for (let i = 0; i < squadre.length; i++) {
     squadre[i].falliSubiti = Math.floor(Math.random() * 300);
 }
 
+const risultato = [];
+
+// Uso un ciclo for per leggere ogni squadra e inserire nel nuovo array "risultato"
+// Scorro tutte le squadre una per una con l'indice i
+// Per ogni squadra estraggo solo le proprietà "nome" e "falliSubiti"
+// e le inserisco (push) come nuovo oggetto dentro l'array "risultato" che avevo lasciato vuota in precedenza
+for (let i = 0; i < squadre.length; i++) {
+  const squadra = squadre[i]; // prendo l’oggetto corrente
+
+  risultato.push({
+    nome: squadra.nome,
+    falliSubiti: squadra.falliSubiti
+  });
+}
+console.log("Tutte le squadre:", squadre);
+console.log("Solo nomi e falli subiti:", risultato);
