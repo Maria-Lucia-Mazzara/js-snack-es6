@@ -12,3 +12,11 @@ const biciclette = [
   { nome: "nera", peso: 7.2 }
 ];
 
+let bici_leggera = biciclette[0];
+
+for (let i = 1; i < biciclette.length; i++) {
+    if (bici_leggera.peso > biciclette[i].peso) {
+        bici_leggera = biciclette[i];
+    }
+}
+console.log(bici_leggera);
